@@ -1,15 +1,15 @@
 <template>
-    <LayoutWrapper>
-        <Content/>
-    </LayoutWrapper>
+    <div class="wrapper">
+        <header>Layout header</header>
+        <main><Content/></main>
+        <footer>Layout footer</footer>
+    </div>
 </template>
 
-<script>
-    import LayoutWrapper from '../components/LayoutWrapper'
-
-    export default {
-        components: {
-            LayoutWrapper
-        },
+<style scoped>
+    header, footer {
+        background-color: pink;
+        padding: 20px;
+        width: 100%;
     }
-</script>
+</style>
